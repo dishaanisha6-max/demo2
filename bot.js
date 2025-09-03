@@ -41,7 +41,7 @@ async function saveChannelToMongo(id, title) {
 }
 
 function formatCaption(text) {
-  return (text || "") + "\n\n" + YOUR_NAME;
+  return (text || "") + "\n\n" + YOUR_NAME + "\n\n" + Join here : @filestore4u ;
 }
 
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
