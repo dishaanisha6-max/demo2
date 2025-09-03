@@ -4,7 +4,7 @@ const { MongoClient } = require("mongodb");
 
 // === CONFIGURATION ===
 const BOT_TOKEN = "8044425978:AAFyco9ZC9J_OlvqTUSJRFAxPDqgwhwkHac";
-const YOUR_NAME = "Kaustav Ray";
+const YOUR_NAME = "Kaustav Ray                           Join here : @filestore4u";
 
 const MONGODB_URI = "mongodb+srv://refay35820:fNS6JM3DC2PmsbgV@cluster0.n6j6fas.mongodb.net/telegramBot?retryWrites=true&w=majority&appName=Cluster0";
 const DB_NAME = "telegramBot";
@@ -41,7 +41,7 @@ async function saveChannelToMongo(id, title) {
 }
 
 function formatCaption(text) {
-  return (text || "") + "\n\n" + YOUR_NAME + "\n\n" + Join here : @filestore4u ;
+  return (text || "") + "\n\n" + YOUR_NAME ;
 }
 
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
